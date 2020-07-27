@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'comments/index'
+  resources :comments
   root "comments#index"
 end
