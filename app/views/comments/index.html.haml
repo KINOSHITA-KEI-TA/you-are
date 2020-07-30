@@ -3,7 +3,7 @@
   .Head__login-box
   = link_to "#",class:"Head__login-box__child" do
     はじめてのひとへ
-  = link_to "#",class:"Head__login-box__child" do
+  = link_to "/comments/new",class:"Head__login-box__child" do
     そうだんする
   = link_to "#",class:"Head__login-box__help" do
     困ったとき
@@ -11,26 +11,33 @@
     大人の方へ
 .Home
   .Main
-    .Main__comment-box
-      .Main__comment-box__name
-        木下啓太
-      .Main__comment-box__tittle
-        いじめについて
-      .Main__comment-box__text-box
-        .Main__comment-box__text-box__text
-          私は、いじめについて反対です。
-        = link_to "#",class:"Main__comment-box__text-box__comment-btn" do
-          コメント
-    .Main__comment-box
-      .Main__comment-box__name
-        木下啓太
-      .Main__comment-box__tittle
-        いじめについて
-      .Main__comment-box__text-box
-        .Main__comment-box__text-box__text
-          私は、いじめについて反対です。
-        = link_to "#",class:"Main__comment-box__text-box__comment-btn" do
-          コメント
+    - @comments.each do |comment|
+      .Main__comment-box
+        .Main__comment-box__name-box
+          .Main__comment-box__name-box__name
+            = comment.name
+          .Main__comment-box__name-box__age
+            = comment.age
+        .Main__comment-box__tittle
+          = comment.tittle
+        .Main__comment-box__text-box
+          .Main__comment-box__text-box__text
+            = comment.text
+          = link_to comment_path(comment.id),class:"Main__comment-box__text-box__comment-btn" do
+            コメント
+    -# .Main__comment-box
+    -#   .Main__comment-box__name-box
+    -#     .Main__comment-box__name-box__name
+    -#       木下啓太
+    -#     .Main__comment-box__name-box__age
+    -#       9才
+    -#   .Main__comment-box__tittle
+    -#     足算について
+    -#   .Main__comment-box__text-box
+    -#     .Main__comment-box__text-box__text
+    -#       私は、〜。
+    -#     = link_to "#",class:"Main__comment-box__text-box__comment-btn" do
+    -#       コメント
   .Side
-
-
+.Footer
+  Copyright YOU ARE 2020.

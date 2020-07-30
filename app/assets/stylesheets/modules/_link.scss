@@ -1,0 +1,17 @@
+.Completion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Kosugi Maru', sans-serif;
+  text-decoration:none;
+  &__link{
+    border: solid 3px #8de481;
+    padding: 20px;
+    text-decoration: none;
+  }
+}
+.Image{
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,17 @@
+
+.Form-box
+  =form_with(model: @comment, html: {class: "Form"}, local: true) do |form|
+    %h3 そうだんしてみよう！
+    .Form__contents
+      .Form__contents__select-box
+        = form.text_field :name, class:'Form__contents__select-box__nameContent', placeholder: "ニックネーム"
+        = form.select :age, {'7さい': 1, '8さい': 2, '9さい': 3, '10歳': 4, '11歳': 5, '12歳': 6, '13歳': 7, '14歳': 8, '15歳': 9, '16歳': 10, 'ヒミツ': 11}, { include_blank: 'ねんれい'}, { class: 'form-control' , required: true }
+      = form.text_field :tittle, class:'Form__contents__tittleContent',placeholder: "だいめい" 
+      = form.text_area :text, class:'Form__contents__inputContent', placeholder: "そうだんないよう", rows: "200"
+      = form.submit "送る",class:'Form__contents__inputSEND'
+    -# .Form-box__form-contents
+      -# = f.text_field :name, class:"Form-box__form-contents__name-box", placeholder: "ニックネーム"
+      -# = f.select :age, class: "Form-box__form-contents__age-box" [["6", 0],["7", 1],["8", 2],["9",3],["10",4],["11",5],["12",6],["13",7],["14",8],["15",9],["16",10]["ヒミツ",11]]
+      -# = f.text_field :tittle, class: "Form-box__form-contents__tittle-box", placeholder: "タイトル"
+      -# = f.text_field :text, class: "Form-box__form-contents__text-box", placeholder: "そうだんごと"
+    -# = f.submit "Send", class: "Form-box__submitBtn"
