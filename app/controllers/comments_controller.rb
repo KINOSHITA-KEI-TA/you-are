@@ -19,6 +19,8 @@ class CommentsController < ApplicationController
 
   def show
     @comment = Comment.find(params[:id])
+    @messages = @comment.messages
+    @message = Message.new
   end
 
   private

@@ -1,8 +1,10 @@
 h2{
   font-family: 'Kosugi Maru', sans-serif;
-  margin: 9px;
-  // border: solid 2px black;
-  // padding: 5px;
+  background-color: #f0b638;
+  color: #ffffff;
+  padding: 9px;
+  margin: 15px;
+  border-radius: 8px;
 }
 .Side{
   &__side-box{
@@ -16,7 +18,7 @@ h2{
           width: 200px;
           margin: 10px 0px 0px 25px;
           padding: 7px;
-          border: solid 2px black;
+          border: solid 2px #f0b638;
           border-radius: 10px;
           font-family: 'Kosugi Maru', sans-serif;
         }
@@ -24,22 +26,53 @@ h2{
           width: 100px;
           height: 30px;
           margin: 10px 0px 10px 25px;
+          border: solid 1px #f0b638;
         }
       }
       &__side-text{
         width: 250px;
-        height: 480px;
+        height: 450px;
         padding: 8px;
-        border: solid 1px black;
+        border: solid 1px #f0b638;
         border-radius: 20px;
         font-family: 'Kosugi Maru', sans-serif;
       }
       &__side-send{
         margin-top: 15px;
         padding: 8px 20px;
-        background-color: #8de481;
-        color: black;
+        background-color: #f0b638;
+        border: none;
+        color: #ffffff;
         font-family: 'Kosugi Maru', sans-serif;
+      }
+    }
+  }
+}
+.Message{
+  &__message-box{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kosugi Maru', sans-serif;
+    &__message-anser{
+      border: solid 2px #f0b638;
+      background-color: #ffffff;
+      width: 60%;
+      margin: 20px  0px 20px  20px;
+      padding: 10px 8px 10px 8px;
+      &__anser-box{
+        display: flex;
+        &__anser-name{
+          padding: 0px 8px;
+        }
+        &__anser-age{
+          margin: 0px 0px 0px 15px;
+        }
+      }
+      &__anser-text{
+        height: 100px;
+        margin: 15px 0px ;
+        padding: 18px 8px;
+        border-top: dashed 2px black;
       }
     }
   }

@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2020_07_29_153125) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "name"
-    t.integer "age"
+    t.string "age"
     t.string "tittle"
     t.string "text"
     t.datetime "created_at", precision: 6, null: false
@@ -22,8 +22,9 @@ ActiveRecord::Schema.define(version: 2020_07_29_153125) do
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.integer "comment_id"
     t.string "name"
-    t.integer "age"
+    t.string "age"
     t.string "text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

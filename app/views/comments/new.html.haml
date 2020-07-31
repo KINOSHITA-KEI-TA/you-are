@@ -5,7 +5,7 @@
     .Form__contents
       .Form__contents__select-box
         = form.text_field :name, class:'Form__contents__select-box__nameContent', placeholder: "ニックネーム"
-        = form.select :age, {'7さい': 1, '8さい': 2, '9さい': 3, '10歳': 4, '11歳': 5, '12歳': 6, '13歳': 7, '14歳': 8, '15歳': 9, '16歳': 10, 'ヒミツ': 11}, { include_blank: 'ねんれい'}, { class: 'form-control' , required: true }
+        = form.select :age, {'7さい': "7さい", '8さい': "8さい", '9さい': "9さい", '10歳': "10歳", '11歳': "11歳", '12歳': "12歳", '13歳': "13歳", '14歳': "14歳", '15歳': "15歳", '16歳': "16歳", 'ヒミツ': "ヒミツ"}, { include_blank: 'ねんれい'}, { class: 'form-control' , required: true }
       = form.text_field :tittle, class:'Form__contents__tittleContent',placeholder: "だいめい" 
       = form.text_area :text, class:'Form__contents__inputContent', placeholder: "そうだんないよう", rows: "200"
       = form.submit "送る",class:'Form__contents__inputSEND'
