@@ -52,12 +52,12 @@
     -#       コメント
   .Side
     .Side__side-box
-      =form_with(model: [ @comment,@message ], html: {class: "Form"}, local: true) do |form|
-        %h2 コメントしよう
+      = form_with(model:[@comment, @message], html: {class: "Form" }, local: true) do |form|
+        %h2 そうだんに答えてみよう！
         .Side__side-box__side-content
           .Side__side-box__side-content__side-tag
             = form.text_field :name, class:'Side__side-box__side-content__side-tag__side-name', placeholder: "ニックネーム"
-            = form.select :age, {'7さい': "7さい", '8さい': "8さい", '9さい': "9さい", '10歳': "10歳", '11歳': "11歳", '12歳': "12歳", '13歳': "13歳", '14歳': "14歳", '15歳': "15歳", '16歳': "16歳", 'ヒミツ': "ヒミツ"}, { include_blank: 'ねんれい'}, { class: 'side-control' , required: true }
+            = form.select :age, {'7さい': "7さい", '8さい': "8さい", '9さい': "9さい", '10歳': "10歳", '11歳': "11歳", '12歳': "12歳", '13歳': "13歳", '14歳': "14歳", '15歳': "15歳", '16歳': "16歳", 'ヒミツ': "ヒミツ", '大人': "大人"}, { include_blank: 'ねんれい'}, { class: 'side-control' , required: true }
           = form.text_area :text, class:'Side__side-box__side-content__side-text', placeholder: "コメント", rows: "100"
           = form.submit "送る",class:'Side__side-box__side-content__side-send'
 .Footer

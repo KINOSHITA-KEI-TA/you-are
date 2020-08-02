@@ -9,6 +9,10 @@
       = form.text_field :tittle, class:'Form__contents__tittleContent',placeholder: "だいめい" 
       = form.text_area :text, class:'Form__contents__inputContent', placeholder: "そうだんないよう", rows: "200"
       = form.submit "送る",class:'Form__contents__inputSEND'
+    .Reverse
+      = link_to "/comments" do
+        もどる
+
     -# .Form-box__form-contents
       -# = f.text_field :name, class:"Form-box__form-contents__name-box", placeholder: "ニックネーム"
       -# = f.select :age, class: "Form-box__form-contents__age-box" [["6", 0],["7", 1],["8", 2],["9",3],["10",4],["11",5],["12",6],["13",7],["14",8],["15",9],["16",10]["ヒミツ",11]]

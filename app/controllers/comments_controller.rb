@@ -9,18 +9,12 @@ class CommentsController < ApplicationController
 
   def create
     Comment.create(comment_params)
-      # if comment_params.save 
-      #   redirect_to action: :new
-      # else
-      #   flash.now[:alert] = 'メッセージを入力してください。'
-      #   render :new
-      # end
   end
 
   def show
     @comment = Comment.find(params[:id])
-    @messages = @comment.messages
     @message = Message.new
+    @messages = @comment.messages.all
   end
 
   private
