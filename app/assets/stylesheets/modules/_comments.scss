@@ -3,6 +3,7 @@
 }
 h1{
   color: red;
+  font-size: 100px;
 }
 
 .Head{
@@ -54,7 +55,7 @@ h1{
     background-color:#ffffff;
     width: 700px;
     height: 80%;
-    margin: 20px 30px 30px 20px;
+    margin: 40px 30px 30px 20px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -137,6 +138,7 @@ h3{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 150px;
   &__contents{
     display: flex;
     flex-direction: column;
@@ -183,6 +185,9 @@ h3{
       height: 30px;
       border-radius: 10px;
     }
+  }
+  .Reverse{
+    margin: 20px 0px 0px 900px;
   }
 }
 .Footer{
