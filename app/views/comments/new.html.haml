@@ -1,14 +1,14 @@
 
 .Form-box
-  =form_with(model: @comment, html: {class: "Form"}, local: true) do |form|
+  =form_with(model: @comment, html: {class: "Form-new"}, local: true) do |form|
     %h3 そうだんしてみよう！
-    .Form__contents
-      .Form__contents__select-box
-        = form.text_field :name, class:'Form__contents__select-box__nameContent', placeholder: "ニックネーム"
+    .Form-new__contents
+      .Form-new__contents__select-box
+        = form.text_field :name, class:'Form-new__contents__select-box__nameContent', placeholder: "ニックネーム"
         = form.select :age, {'7さい': "7さい", '8さい': "8さい", '9さい': "9さい", '10歳': "10歳", '11歳': "11歳", '12歳': "12歳", '13歳': "13歳", '14歳': "14歳", '15歳': "15歳", '16歳': "16歳", 'ヒミツ': "ヒミツ"}, { include_blank: 'ねんれい'}, { class: 'form-control' , required: true }
-      = form.text_field :tittle, class:'Form__contents__tittleContent',placeholder: "だいめい" 
-      = form.text_area :text, class:'Form__contents__inputContent', placeholder: "そうだんないよう", rows: "200"
-      = form.submit "送る",class:'Form__contents__inputSEND'
+      = form.text_field :tittle, class:'Form-new__contents__tittleContent',placeholder: "だいめい" 
+      = form.text_area :text, class:'Form-new__contents__inputContent', placeholder: "そうだんないよう", rows: "200"
+      = form.submit "送る",class:'Form-new__contents__inputSEND'
     .Reverse
       = link_to "/comments" do
         もどる

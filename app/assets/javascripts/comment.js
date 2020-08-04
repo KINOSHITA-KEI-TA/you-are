@@ -1,6 +1,6 @@
 $(function(){
   function buildHTML(message){
-    let html = `<div class="Message__message-box__message-anser">
+    let html =  `<div class="Message__message-box__message-anser">
                 <div class="Message__message-box__message-anser__anser-box">
                 <div class="Message__message-box__message-anser__anser-box__anser-name">
                 ${message.name}
@@ -12,6 +12,10 @@ $(function(){
                 <div class="Message__message-box__message-anser__anser-text">
                 ${message.text}
                 </div>
+                <form class="button_to" method="post" action="${}"><input type="submit" value="いいね">
+                <input type="hidden" name="authenticity_token" value="${}">
+                </form>
+                0
                 </div>`
     return html;
   }
