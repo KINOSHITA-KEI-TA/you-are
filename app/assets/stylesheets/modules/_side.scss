@@ -1,13 +1,18 @@
+* {
+  box-sizing: border-box;
+}
 h2{
   font-family: 'Kosugi Maru', sans-serif;
+  text-align: center;
   background-color: #f0b638;
   color: #ffffff;
-  padding: 9px;
-  margin: 15px;
+  padding: 9px 3px;
+  margin: 10px 10px 15px 10px;
   border-radius: 8px;
 }
 .Side{
   &__side-box{
+    margin-top: 60px;
     &__side-content{
       display: flex;
       flex-direction: column;

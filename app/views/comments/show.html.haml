@@ -37,19 +37,10 @@
                   = message.age
               .Message__message-box__message-anser__anser-text
                 = message.text
-    -# .Main__comment-box
-    -#   .Main__comment-box__name-box
-    -#     .Main__comment-box__name-box__name
-    -#       木下啓太
-    -#     .Main__comment-box__name-box__age
-    -#       9才
-    -#   .Main__comment-box__tittle
-    -#     足算について
-    -#   .Main__comment-box__text-box
-    -#     .Main__comment-box__text-box__text
-    -#       私は、〜。
-    -#     = link_to "#",class:"Main__comment-box__text-box__comment-btn" do
-    -#       コメント
+              = button_to 'いいね', comment_message_likes_path(@comment,message)
+              = message.likes.count
+              -# = flash[:notice]
+   
   .Side
     .Side__side-box
       = form_with(model:[@comment, @message], html: {class: "Form" }, local: true) do |form|

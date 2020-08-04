@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root "comments#index"
   resources :comments do
-    resources :messages,only: [:create]
+    resources :messages,only: [:create] do
+      resources :likes, only: [:create]
+    end
   end
 end

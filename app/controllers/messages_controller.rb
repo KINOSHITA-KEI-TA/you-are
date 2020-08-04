@@ -6,8 +6,8 @@ class MessagesController < ApplicationController
       format.json
     end
   end
-  # message = Message.create(message_params)
-  # redirect_to "/comments/#{message.comment.id}"
+
+  
 
   private
   def message_params
