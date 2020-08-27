@@ -37,7 +37,7 @@
                   = message.age
               .Message__message-box__message-anser__anser-text
                 = message.text
-              = button_to 'いいね', comment_message_likes_path(@comment,message)
+              = button_to 'ありがとう', comment_message_likes_path(@comment,message)
               = message.likes.count
               -# = flash[:notice]
    
