@@ -5,8 +5,8 @@
     はじめてのひとへ
   = link_to "/comments/new",class:"Head__login-box__child" do
     そうだんする
-  = link_to "#",class:"Head__login-box__help" do
-    困ったとき
+  = link_to "/child_secrets",class:"Head__login-box__help" do
+    こまったとき
   = link_to "#",class:"Head__login-box__adult" do
     大人の方へ
 .Home
@@ -23,8 +23,8 @@
         .Main__comment-box__text-box
           .Main__comment-box__text-box__text
             = comment.text
-          = link_to comment_path(comment.id),class:"Main__comment-box__text-box__comment-btn" do
-            見てみる
+        = link_to comment_path(comment.id),class:"Main__comment-box__text-box__comment-btn" do
+          見てみる
     -# .Main__comment-box
     -#   .Main__comment-box__name-box
     -#     .Main__comment-box__name-box__name
