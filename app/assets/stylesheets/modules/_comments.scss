@@ -101,21 +101,20 @@ h1{
         background-color: #f0b638;
         color: #ffffff;
         border-radius: 20px;
-        padding: 10px;
         text-decoration: none;
-        margin-left: 450px;
-        bottom: 50px;
+        text-align: center;
+        padding: 7px 0px 0px 0px;
+        height: 10%;
       }
       &__back-btn{
         border: solid 2px #75bbc7;
         background-color: #75bbc7;
         color: #ffffff;
         border-radius: 20px;
-        padding: 15px;
         text-decoration: none;
-        position: relative;
-        left: 610px;
-        bottom: 50px;
+        text-align: center;
+        padding: 7px 0px 0px 0px;
+        height: 10%;
       }
     }
   }
