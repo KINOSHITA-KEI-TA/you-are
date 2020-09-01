@@ -8,18 +8,15 @@
   = link_to "#",class:"Head__login-box__adult" do
     大人の方へ
     
-.Form-box
-  =form_with(model: @comment, html: {class: "Form-new"}, local: true) do |form|
-    %h3 そうだんダイヤル
-    %P.Description こちらのそうだんに関しては公開されませんよ！
-    .Form-new__contents
-      .Form-new__contents__select-box
-        = form.text_field :name, class:'Form-new__contents__select-box__nameContent', placeholder: "ニックネーム"
-        = form.select :age, {'7さい': "7さい", '8さい': "8さい", '9さい': "9さい", '10歳': "10歳", '11歳': "11歳", '12歳': "12歳", '13歳': "13歳", '14歳': "14歳", '15歳': "15歳", '16歳': "16歳", 'ヒミツ': "ヒミツ"}, { include_blank: 'ねんれい'}, { class: 'form-control' , required: true }
-        = form.text_field :school,class:'Form-new__contents__select-box__nameContent',placeholder:"学校名"
-      = form.text_field :tittle, class:'Form-new__contents__tittleContent',placeholder: "だいめい" 
-      = form.text_area :text, class:'Form-new__contents__inputContent', placeholder: "そうだんないよう", rows: "200"
-      = form.submit "送る",class:'Form-new__contents__inputSEND'
-    .Reverse
-      = link_to "/comments" do
-        もどる
+.Secret-box
+  = form_with(model: @secret, html: {class: "Secret-new"}, local: true) do |form|
+    %h3.Title 困ったときのそうだんダイヤル
+    %P.Description ※こちらのそうだんに関しては公開されませんよ！
+    .Secret-new__s-contents
+      .Secret-new__s-contents__s-select-box
+        = form.text_field :name, class:'Secret-new__s-contents__s-select-box__s-nameContent', placeholder: "ニックネーム"
+        = form.select :age, {'7さい': "7さい", '8さい': "8さい", '9さい': "9さい", '10歳': "10歳", '11歳': "11歳", '12歳': "12歳", '13歳': "13歳", '14歳': "14歳", '15歳': "15歳", '16歳': "16歳", 'ヒミツ': "ヒミツ"}, { include_blank: 'ねんれい'}, { class: 's-form-control' , required: true }
+      学校名は記入しなくても大丈夫ですよ。
+      = form.text_field :school_name,class:'Secret-new__s-contents__school-name',placeholder:"学校名（任意）"
+      = form.text_area :text, class:'Secret-new__s-contents__s-inputContent', placeholder: "そうだんないよう", rows: "200"
+      = form.submit "送る",class:'Secret-new__s-contents__s-inputSEND'
