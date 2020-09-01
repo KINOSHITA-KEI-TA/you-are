@@ -20,7 +20,6 @@ h1{
       border: solid 2px #75bbc7 ;
       text-decoration: none;
       padding: 2px;
-      font-family: 'Kosugi Maru', sans-serif;
     }
     &__help{
       color: #8de481;
@@ -28,7 +27,6 @@ h1{
       border: solid 2px #8de481;
       text-decoration: none;
       padding: 2px;
-      font-family: 'Kosugi Maru', sans-serif;
     }
     &__adult{
       color: #f0b638;
@@ -36,7 +34,6 @@ h1{
       border: solid 2px #f0b638 ;
       text-decoration: none;
       padding: 2px;
-      font-family: 'Kosugi Maru', sans-serif;
     }
   }
 }
@@ -59,7 +56,6 @@ h1{
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    font-family: 'Kosugi Maru', sans-serif;
     &__name-box{
       display: flex;
       align-items: center;
@@ -125,24 +121,23 @@ h1{
   width: 300px;
 }
 h3{
-  color: #8de481;
+  color: #75bbc7;
   font-size: large;
   margin: 20px 0 ;
   font-weight: bold;
-  font-family: 'Kosugi Maru', sans-serif;
 }
 .Form-new{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 150px;
+  margin-top: 120px;
   &__contents{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid 3px #8de481 ;
+    border: solid 3px #75bbc7 ;
     padding: 20px;
     width: 80%;
     height: 80%;
@@ -176,16 +171,13 @@ h3{
       padding: 10px 8px 10px 8px;
     }
     &__inputSEND{
-      background-color: #8de481 ;
+      background-color: #75bbc7 ;
       color: white;
       border: none;
       width: 90px;
       height: 30px;
       border-radius: 10px;
     }
-  }
-  .Reverse{
-    margin: 20px 0px 0px 900px;
   }
 }
 .Footer{
