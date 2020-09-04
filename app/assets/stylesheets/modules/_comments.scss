@@ -21,6 +21,10 @@ h1{
       text-decoration: none;
       padding: 2px;
     }
+    &__child:hover {
+      cursor: pointer;
+      transform: scale(1.2, 1.2);
+    }
     &__help{
       color: #8de481;
       font-size: 20px;
@@ -28,12 +32,20 @@ h1{
       text-decoration: none;
       padding: 2px;
     }
+    &__help:hover {
+      cursor: pointer;
+      transform: scale(1.2, 1.2);
+    }
     &__adult{
       color: #f0b638;
       font-size: 20px;
       border: solid 2px #f0b638 ;
       text-decoration: none;
       padding: 2px;
+    }
+    &__adult:hover {
+      cursor: pointer;
+      transform: scale(1.2, 1.2);
     }
   }
 }
@@ -102,6 +114,10 @@ h1{
         padding: 7px 0px 0px 0px;
         height: 8%;
       }
+      &__comment-btn:hover {
+        background: #f3d353;
+        border: solid 2px #f0b638;
+      }
       &__back-btn{
         border: solid 2px #75bbc7;
         background-color: #75bbc7;
@@ -111,6 +127,10 @@ h1{
         text-align: center;
         padding: 7px 0px 0px 0px;
         height: 8%;
+      }
+      &__back-btn:hover {
+        background: #bddaf1;
+        border: solid 2px #75bbc7;
       }
     }
   }

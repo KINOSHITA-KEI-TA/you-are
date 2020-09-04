@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Kosugi Maru', sans-serif;
 }
 h2{
   font-family: 'Kosugi Maru', sans-serif;
@@ -25,7 +26,6 @@ h2{
           padding: 7px;
           border: solid 2px #f0b638;
           border-radius: 10px;
-          font-family: 'Kosugi Maru', sans-serif;
         }
         .side-control{
           width: 100px;
@@ -40,7 +40,6 @@ h2{
         padding: 8px;
         border: solid 1px #f0b638;
         border-radius: 20px;
-        font-family: 'Kosugi Maru', sans-serif;
       }
       &__side-send{
         margin-top: 15px;
@@ -48,7 +47,10 @@ h2{
         background-color: #f0b638;
         border: none;
         color: #ffffff;
-        font-family: 'Kosugi Maru', sans-serif;
+      }
+      &__side-send:hover {
+        background: #f3d353;
+        border: solid 2px #f0b638;
       }
     }
   }
