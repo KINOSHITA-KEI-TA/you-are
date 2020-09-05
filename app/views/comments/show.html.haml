@@ -29,13 +29,13 @@
         %h4 【 そうだんの答え 】
         - if @messages
           - @messages.each do |message|
-            .Message__message-box__message-anser
-              .Message__message-box__message-anser__anser-box
-                .Message__message-box__message-anser__anser-box__anser-name
+            .Message__message-box__message-answer
+              .Message__message-box__message-answer__answer-box
+                .Message__message-box__message-answer__answer-box__answer-name
                   = message.name
-                .Message__message-box__message-anser__anser-box__anser-age
+                .Message__message-box__message-answer__answer-box__answer-age
                   = message.age
-              .Message__message-box__message-anser__anser-text
+              .Message__message-box__message-answer__answer-text
                 = message.text
               = button_to 'ありがとう', comment_message_likes_path(@comment,message)
               = message.likes.count

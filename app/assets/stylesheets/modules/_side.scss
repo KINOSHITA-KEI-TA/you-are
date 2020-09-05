@@ -60,22 +60,22 @@ h2{
     display: flex;
     flex-direction: column;
     font-family: 'Kosugi Maru', sans-serif;
-    &__message-anser{
+    &__message-answer{
       border: solid 2px #f0b638;
       background-color: #ffffff;
       width: 60%;
       margin: 20px  0px 20px  20px;
       padding: 10px 8px 10px 8px;
-      &__anser-box{
+      &__answer-box{
         display: flex;
-        &__anser-name{
+        &__answer-name{
           padding: 0px 8px;
         }
-        &__anser-age{
+        &__answer-age{
           margin: 0px 0px 0px 15px;
         }
       }
-      &__anser-text{
+      &__answer-text{
         height: 100px;
         margin: 15px 0px ;
         padding: 18px 8px;

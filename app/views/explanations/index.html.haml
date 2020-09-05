@@ -1,0 +1,106 @@
+.Head
+  %h1 YOU ARE
+  .Head__login-box
+  = link_to "/comments",class:"Head__login-box__child" do
+    はじめにもどる
+  = link_to "/comments/new",class:"Head__login-box__child" do
+    そうだんする
+  = link_to "/child_secrets",class:"Head__login-box__help" do
+    こまったとき
+  = link_to "#",class:"Head__login-box__adult" do
+    大人の方へ
+
+.Explanation-body
+  %h1.title-Explanation
+    【アプリケーションのせつめい】
+    .item-Explanation
+      %p.item-Explanation__details
+        ・だれでも、
+        %ruby 
+          困
+          %rt こま
+        ったことや
+        %ruby 
+          悩
+          %rt なや
+        みをそうだんできるアプリケーションです。
+      %p.item-Explanation__details
+        ・そうだんに答えることもできます。
+    .image-explanation
+      = image_tag '/assets/first.png', alt: '説明画像', height: '400', width: '600', class: 'image-first' 
+      .image-explanation__first
+        水色の[そうだんする]を
+        %ruby 
+          押
+          %rt お
+        すと、そうだん
+        %ruby
+          入力画面
+          %rt にゅうりょくがめん
+        に移動します。
+      .image-explanation__second-title
+        ◎そうだんしてみよう！
+      = image_tag '/assets/second.png', alt: '説明画像', height: '400', width: '600', class: 'image-second'
+      .image-explanation__second
+        １.あなたの「なまえ」と「ねんれい」を
+        %ruby
+          入力
+          %rt にゅうりょく
+        してください。
+      .image-explanation__second
+        ２.そうだん
+        %ruby
+          内容
+          %rt ないよう
+        の
+        %ruby
+          題名
+          %rt だいめい
+        （タイトル）を教えてください。
+      .image-explanation__second
+        ３.そうだん
+        %ruby
+          内容
+          %rt ないよう
+        をくわしく教えてください。
+      .image-explanation__second-5-title
+        ◎そうだんの答えを見にいこう！
+      .image-explanation__second-5
+        トップページにもどると、そうだんしてくれた
+        %ruby
+          内容
+          %rt ないよう
+        が出てきます。
+      .image-explanation__second-5
+        [見てみる]を
+        %ruby 
+          押
+          %rt お 
+        すと、そうだんに答えてくれた
+        %ruby 
+          内容
+          %rt ないよう
+        を見にいけます。
+      = image_tag '/assets/second.5.png', alt: '説明画像', height: '400', width: '600', class: 'image-second-5' 
+      .image-explanation__third-title
+        ◎答えてくれた
+        %ruby
+          内容
+          %rt ないよう
+        を
+        %ruby
+          確認
+          %rt かくにん
+        してみましょう！
+      .image-explanation__third
+        良い答えだったら、ありがとうボタンも押してみようね！
+      = image_tag '/assets/third.png', alt: '説明画像', height: '400', width: '600', class: 'image-third' 
+      .image-explanation__third-answer
+        %ruby
+          気
+          %rt き
+        が
+        %ruby
+          向
+          %rt む
+        いたら、他の人のそうだんにも答えてみよう！
