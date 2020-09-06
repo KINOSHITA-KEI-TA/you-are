@@ -8,13 +8,103 @@
   margin: 20px 0px 20px 0px;
 }
 .item-Explanation{
-  margin: 20px 0px 30px 0px;
   font-size: 20px;
-  border: solid 2px #75bbc7 ;
+  padding: 0.2em 0.5em;
+  margin: 2em 2em;
+  background: #d6ebff;
+  box-shadow: 0px 0px 0px 10px #d6ebff;
+  border: dashed 2px white;
+  width: 70%;
   &__details{
     color: black;
     font-size: 25px;
     padding: 10px 0px 10px 10px;
+  }
+}
+.image-first{
+  margin-left: 10px;
+}
+.image-explanation{
+  &__first-box{
+    display: flex;
+    &__first-content{
+      margin: 40px 10px 0px 30px;
+      &__first{
+      padding: 20px 0px ;
+      font-size: 23px;
+      }
+    }
+  }
+  &__second-title{
+    margin: 50px 0px 20px 20px;
+    font-size: 35px;
+  }
+  &__second-box{
+    display: flex;
+    &__second-content{
+      margin: 40px 10px 0px 30px;
+      &__second{
+      padding: 20px 0px ;
+      font-size: 23px;
+      }
+    }
+  }
+  &__second-5-title{
+    margin: 50px 0px 20px 20px;
+    font-size: 35px;
+  }
+  &__second-5-box{
+    display: flex;
+    &__second-5-content{
+      flex-direction: column;
+      margin:40px 10px 0px 30px ;
+      &__second-5{
+        padding: 20px 0px ;
+        font-size: 23px;
+        }
+    }
+  }
+  &__third-title{
+    margin: 50px 0px 20px 20px;
+    font-size: 35px;
+  }
+  &__third-box{
+    display: flex;
+    &__third{
+      margin:40px 10px 0px 30px ;
+      font-size: 23px;
+
+    }
+  }
+  &__third-answer{
+    margin: 40px 10px 0px 30px;
+    font-size: 25px;
+  }
+  &__trouble-title{
+    font-size: 35px;
+    margin:40px 0px 20px 20px ;
+  }
+  &__trouble-box-1{
+    display: flex;
+    &__trouble-content{
+      padding: 0.2em 0.5em;
+      margin: 40px 10px 0px 30px;
+      font-size: 23px;
+      &__trouble-1{
+        padding:20px 0px ;
+      }
+    }
+  }
+  &__trouble-box-2{
+    display: flex;
+    &__trouble-content{
+      padding: 0.2em 0.5em;
+      margin: 2em 0;
+      font-size: 23px;
+      &__trouble-2{
+        padding:20px 0px ;
+      }
+    }
   }
 }
 }
