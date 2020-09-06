@@ -12,7 +12,7 @@
 
 .Explanation-body
   %h1.title-Explanation
-    【アプリケーションのせつめい】
+    【アプリのせつめい】
     .item-Explanation
       %p.item-Explanation__details
         ・だれでも、
@@ -23,67 +23,77 @@
         %ruby 
           悩
           %rt なや
-        みをそうだんできるアプリケーションです。
+        みをそうだんできるアプリです。
       %p.item-Explanation__details
         ・そうだんに答えることもできます。
     .image-explanation
-      = image_tag '/assets/first.png', alt: '説明画像', height: '400', width: '600', class: 'image-first' 
-      .image-explanation__first
-        水色の[そうだんする]を
-        %ruby 
-          押
-          %rt お
-        すと、そうだん
-        %ruby
-          入力画面
-          %rt にゅうりょくがめん
-        に移動します。
+      .image-explanation__first-box
+        = image_tag '/assets/first.png', alt: '説明画像', height: '400', width: '600', class: 'image-first' 
+        .image-explanation__first-box__first-content
+          .image-explanation__first-box__first-content__first
+            水色の[そうだんする]を
+            %ruby 
+              押
+              %rt お
+            すと、そうだん
+            %ruby
+              入力画面
+              %rt にゅうりょくがめん
+            に
+            %ruby 
+              移動
+              %rt いどう
+            します。
       .image-explanation__second-title
-        ◎そうだんしてみよう！
-      = image_tag '/assets/second.png', alt: '説明画像', height: '400', width: '600', class: 'image-second'
-      .image-explanation__second
-        １.あなたの「なまえ」と「ねんれい」を
-        %ruby
-          入力
-          %rt にゅうりょく
-        してください。
-      .image-explanation__second
-        ２.そうだん
-        %ruby
-          内容
-          %rt ないよう
-        の
-        %ruby
-          題名
-          %rt だいめい
-        （タイトル）を教えてください。
-      .image-explanation__second
-        ３.そうだん
-        %ruby
-          内容
-          %rt ないよう
-        をくわしく教えてください。
+        ①そうだんしてみよう！
+      .image-explanation__second-box
+        = image_tag '/assets/second.png', alt: '説明画像', height: '400', width: '600', class: 'image-first'
+        .image-explanation__second-box__second-content
+          .image-explanation__second-box__second-content__second
+            １.あなたの「なまえ」と「ねんれい」を
+            %ruby
+              入力
+              %rt にゅうりょく
+            してください。
+          .image-explanation__second-box__second-content__second
+            ２.そうだん
+            %ruby
+              内容
+              %rt ないよう
+            の
+            %ruby
+              題名
+              %rt だいめい
+            （タイトル）を教えてください。
+          .image-explanation__second-box__second-content__second
+            ３.そうだん
+            %ruby
+              内容
+              %rt ないよう
+            をくわしく教えてください。
       .image-explanation__second-5-title
-        ◎そうだんの答えを見にいこう！
-      .image-explanation__second-5
-        トップページにもどると、そうだんしてくれた
-        %ruby
-          内容
-          %rt ないよう
-        が出てきます。
-      .image-explanation__second-5
-        [見てみる]を
-        %ruby 
-          押
-          %rt お 
-        すと、そうだんに答えてくれた
-        %ruby 
-          内容
-          %rt ないよう
-        を見にいけます。
-      = image_tag '/assets/second.5.png', alt: '説明画像', height: '400', width: '600', class: 'image-second-5' 
+        ②そうだんの答えを見にいこう！
+      .image-explanation__second-5-box
+        = image_tag '/assets/second.5.png', alt: '説明画像', height: '400', width: '600', class: 'image-first' 
+        .image-explanation__second-5-box__second-5-content
+          .image-explanation__second-5-box__second-5-content__second-5
+            トップページにもどると、そうだんしてくれた
+            %ruby
+              内容
+              %rt ないよう
+            が出ます。
+          .image-explanation__second-5-box__second-5-content__second-5
+            [見てみる]を
+            %ruby 
+              押
+              %rt お 
+            すと、そうだんに答えてくれた
+            %ruby 
+              内容
+              %rt ないよう
+            を見にいけます。
       .image-explanation__third-title
-        ◎答えてくれた
+        ③答えてくれた
         %ruby
           内容
           %rt ないよう
@@ -92,10 +102,12 @@
           確認
           %rt かくにん
         してみましょう！
-      .image-explanation__third
-        良い答えだったら、ありがとうボタンも押してみようね！
-      = image_tag '/assets/third.png', alt: '説明画像', height: '400', width: '600', class: 'image-third' 
+      .image-explanation__third-box
+        = image_tag '/assets/third.png', alt: '説明画像', height: '400', width: '600', class: 'image-first' 
+        .image-explanation__third-box__third
+          いい答えだったら、ありがとうボタンも押してみようね！
       .image-explanation__third-answer
+        ※
         %ruby
           気
           %rt き
@@ -104,3 +116,55 @@
           向
           %rt む
         いたら、他の人のそうだんにも答えてみよう！
+      .image-explanation__trouble-title
+        「こまったとき」について
+      .image-explanation__trouble-box-1
+        = image_tag '/assets/trouble-1.png', alt: '説明画像', height: '400', width: '600', class: 'image-first' 
+        .image-explanation__trouble-box-1__trouble-content
+          .image-explanation__trouble-box-1__trouble-content__trouble-1
+            %ruby 
+              表示
+              %rt ひょうじ
+            されたくない・
+            %ruby 
+              公開
+              %rt こうかい
+            されたくない、そうだん内容があればコチラに教えてください。
+            %br
+          .image-explanation__trouble-box-1__trouble-content__trouble-1
+            %ruby 
+              絶対
+              %rt ぜったい
+            に
+            %ruby 
+              表示
+              %rt ひょうじ
+            はされません。
+      .image-explanation__trouble-box-2
+        = image_tag '/assets/trouble-2.png', alt: '説明画像', height: '400', width: '600', class: 'image-trouble' 
+        .image-explanation__trouble-box-2__trouble-content
+          .image-explanation__trouble-box-2__trouble-content__trouble-2
+            １.あなたの「なまえ」と「ねんれい」を
+            %ruby
+              入力
+              %rt にゅうりょく
+            してください。
+          .image-explanation__trouble-box-2__trouble-content__trouble-2
+            ２.そうだん
+            %ruby
+              内容
+              %rt ないよう
+            の
+            %ruby
+              題名
+              %rt だいめい
+            （タイトル）を教えてください。
+          .image-explanation__trouble-box-2__trouble-content__trouble-2
+            ３.そうだん
+            %ruby
+              内容
+              %rt ないよう
+            をくわしく教えてください。
+
+.Footer
+  Copyright YOU ARE 2020.

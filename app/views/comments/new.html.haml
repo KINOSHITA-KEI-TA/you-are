@@ -1,7 +1,7 @@
 .Head
   %h1 YOU ARE
   .Head__login-box
-  = link_to "#",class:"Head__login-box__child" do
+  = link_to explanations_path,class:"Head__login-box__child" do
     はじめてのひとへ
   = link_to "/comments",class:"Head__login-box__child" do
     はじめにもどる
@@ -26,3 +26,5 @@
       -# = f.text_field :tittle, class: "Form-box__form-contents__tittle-box", placeholder: "タイトル"
       -# = f.text_field :text, class: "Form-box__form-contents__text-box", placeholder: "そうだんごと"
     -# = f.submit "Send", class: "Form-box__submitBtn"
+.Footer
+  Copyright YOU ARE 2020.
