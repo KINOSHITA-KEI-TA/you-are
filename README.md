@@ -15,6 +15,7 @@ Overview
   <li>秘密にしたい悩みに対応</li>
   <li>いいね機能（ありがとうボタン）</li>
 </ul>
+
 ## デモ動画
 <a href="https://gyazo.com/3beff7d36637c8a5c81159bce7cc8479"><img src="https://i.gyazo.com/3beff7d36637c8a5c81159bce7cc8479.gif" alt="Image from Gyazo" width="1000"/></a>
 
@@ -45,7 +46,7 @@ Overview
 ## Licence
 
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
-
+Copyright YOU ARE 2020.
 ## Author
 
 [tcnksm](https://github.com/tcnksm)
