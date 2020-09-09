@@ -1,5 +1,7 @@
 # README
-<a><img src="/assets/you-are.jpg" alt="Image from you-are" width="1000"/></a>
+<div align="center">
+<img src="/assets/you-are.jpg" alt="YOUーARE" title="YOUーARE">
+</div>
 ====
 Name
 Child-Saving「YOUーARE」 app
