@@ -1,6 +1,6 @@
 # README
-<img src="/assets/you-are.jpg" alt="YOUーARE" title="YOUーARE">
-====
+![you-are](https://user-images.githubusercontent.com/67889594/92625605-d4de2080-f303-11ea-84be-cd0fde2618eb.jpg)
+
 Name
 Child-Saving「YOUーARE」 app
 ====
