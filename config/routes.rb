@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root "comments#index"
+  root 'tops#index'
   resources :explanations,only:[:index]
-  resources :child_secrets,only: [:index,:create]
+  resources :child_secrets,only: [:index,:create,:new]
   resources :comments do
     resources :messages,only: [:create] do
       resources :likes, only: [:create]

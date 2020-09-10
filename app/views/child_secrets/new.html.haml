@@ -1,0 +1,25 @@
+%body
+= render "comments/head"
+.image-head
+  = image_tag '/assets/shizen.jpg', alt: '説明画像', height: '300', width: '100%', class: 'image-first' 
+  %h1.Window-title
+    こんなそうだん窓口も・・・
+    .Window-body
+      .Window-body__window-list
+        .list-dial
+          = link_to "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kodomo/kodomo_kosodate/dial_189.html",class:"dial" do
+            ・児童相談所虐待対応ダイヤル「189」
+        .list-dial
+          = link_to "https://www.mext.go.jp/a_menu/shotou/seitoshidou/1306988.htm",class:"dial" do
+            ・「24時間（じかん）子供（こども）SOSダイヤル」
+        .list-dial
+          = link_to "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/soudan_tel.html",class:"dial" do
+            ・こころの健康相談統一ダイヤル
+        .list-dial
+          = link_to "https://www.since2011.net/yorisoi/n5/",class:"dial" do
+            ・よりそいホットライン
+        .list-dial
+          = link_to "http://lifelink-db.org/",class:"dial" do
+            ・いのちと暮らしの相談ナビ
+.Footer
+  Copyright YOU ARE 2020.               
