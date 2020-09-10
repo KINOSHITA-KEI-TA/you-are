@@ -52,3 +52,8 @@ $(function(){
       $('html,body').animate( {scrollTop:0} , 'slow' );
     });
 })
+$(function() {
+  $('#adult-btn').on('click', function(){
+    window.alert('実装中');
+    });
+})

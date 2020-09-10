@@ -5,7 +5,7 @@
     はじめてのひとへ
   = link_to "/comments",class:"Head__login-box__help" do
     はじめにもどる
-  = link_to "#",class:"Head__login-box__adult" do
+  = link_to "#",class:"Head__login-box__adult",id:"adult-btn" do
     大人の方へ
     
 .Secret-box
@@ -19,4 +19,5 @@
       学校名は記入しなくても大丈夫ですよ。
       = form.text_field :school_name,class:'Secret-new__s-contents__school-name',placeholder:"学校名（任意）"
       = form.text_area :text, class:'Secret-new__s-contents__s-inputContent', placeholder: "そうだんないよう", rows: "200"
+      ※でんわばんごう、もしくはメールアドレスを教えてくれれば、しっかり答えます！
       = form.submit "送る",class:'Secret-new__s-contents__s-inputSEND'

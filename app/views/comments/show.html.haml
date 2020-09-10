@@ -1,14 +1,6 @@
-.Head
-  %h1 YOU ARE
-  .Head__login-box
-  = link_to explanations_path,class:"Head__login-box__child" do
-    はじめてのひとへ
-  = link_to "/comments/new",class:"Head__login-box__child" do
-    そうだんする
-  = link_to "/child_secrets",class:"Head__login-box__help" do
-    こまったとき
-  = link_to "#",class:"Head__login-box__adult" do
-    大人の方へ
+%body
+
+= render "head"
 .Home
   .Main
     .Main__comment-box
