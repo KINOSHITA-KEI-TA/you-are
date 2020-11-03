@@ -17,6 +17,10 @@ class CommentsController < ApplicationController
     @messages = @comment.messages.all
   end
 
+  def search
+    @comments = Comment.search(params[:keyword])
+  end
+
   private
   def comment_params
     params.require(:comment).permit(:name, :age, :tittle, :text)
