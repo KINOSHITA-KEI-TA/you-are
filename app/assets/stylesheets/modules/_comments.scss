@@ -61,10 +61,12 @@ h1{
   text-align: center;
   height: 50px;
   padding: 10px 0px 0px 0px;
+  border: solid 3px #8de481 ;
+  border-radius: 90px;
   .search-input{
     height: 30px;
     width: 30%;
-    padding: 5px;
+    padding: 5px ;
   }
   .search-btn{
     color: #ffffff;
