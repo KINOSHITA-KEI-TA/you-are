@@ -95,3 +95,14 @@ Copyright YOU ARE 2020.
 |ip|string|
 ### Association
 - belongs_to :message
+
+
+## users（parent）テーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|name|string|
+|school_name|string|
+|email|string|null: false, unique: true|
+|password|string|null: false, unique: true|
+### Association

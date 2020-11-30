@@ -1,0 +1,26 @@
+%body
+
+= render "head"
+.Search-Form
+  = form_with(url: search_comments_path, local: true, method: :get, class: "search-form") do |form|
+    = form.text_field :keyword, placeholder: "他の友だちのしつもんを見てみよう！", class: "search-input"
+    = form.submit "調べる", class: "search-btn"
+.Home
+  .Main
+    - @comments.each do |comment|
+      .Main__comment-box
+        .Main__comment-box__name-box
+          .Main__comment-box__name-box__name
+            = comment.name
+          .Main__comment-box__name-box__age
+            = comment.age
+        .Main__comment-box__tittle
+          = comment.tittle
+        .Main__comment-box__text-box
+          .Main__comment-box__text-box__text
+            = comment.text
+        = link_to comment_path(comment.id),class:"Main__comment-box__text-box__comment-btn" do
+          見てみる
+  .Side
+.Footer
+  Copyright YOU ARE 2020.
