@@ -62,3 +62,5 @@ gem 'pry-rails'
 gem 'jquery-rails'
 
 gem 'fog-aws'
+
+gem 'devise'
