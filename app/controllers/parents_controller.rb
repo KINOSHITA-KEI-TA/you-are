@@ -10,6 +10,11 @@ class ParentsController < ApplicationController
     @comment = Comment.new
   end
 
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+  end
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:name,:school_name])
   end

@@ -16,6 +16,10 @@
           = @comment.text
       = link_to "/comments",class:"Main__comment-box__text-box__back-btn" do
         もどる
+      - if user_signed_in?
+        .default
+          = link_to comment_path(comment.id), method: :delete, local: true, data: { confirm: '削除してよろしいですか？' } do
+            %input.default__gray{type: "submit", value: "この商品を削除する"}
     .Message
       .Message__message-box
         %h4 【 そうだんの答え 】

@@ -16,6 +16,11 @@ class CommentsController < ApplicationController
     @message = Message.new
     @messages = @comment.messages.all
   end
+  
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+  end
 
   def search
     @comments = Comment.search(params[:keyword])

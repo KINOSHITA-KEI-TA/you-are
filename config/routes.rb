@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root 'tops#index'
-  resources :parents,only:[:index]
+  resources :parents,only:[:index,:destroy]
   resources :explanations,only:[:index]
   resources :child_secrets,only: [:index,:create,:new]
   resources :comments do

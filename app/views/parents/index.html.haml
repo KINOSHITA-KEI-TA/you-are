@@ -22,6 +22,10 @@
             = comment.text
         = link_to comment_path(comment.id),class:"Main__comment-box__text-box__comment-btn" do
           見てみる
+        - if user_signed_in?
+          .default
+            = link_to comment_path(comment.id), method: :delete, local: true, data: { confirm: '削除してよろしいですか？' } do
+              %input.default__gray{type: "submit", value: "この商品を削除する"}
   .Side
 .Footer
   Copyright YOU ARE 2020.
