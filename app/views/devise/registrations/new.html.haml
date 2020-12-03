@@ -1,6 +1,6 @@
 .AccountPage
   .AccountPage__title
-    %h2 Create Account
+    %h2 アカウント作成
     %h5 新規アカウントの作成
     = render "devise/shared/links"
   .AccountPage__form
@@ -34,3 +34,5 @@
           = f.password_field :password_confirmation, autocomplete: "off"
       .actions
         = f.submit "新規登録", class: 'Button UserButton'
+      = link_to "/comments",class:"top-enter" do
+        はじめにもどる
