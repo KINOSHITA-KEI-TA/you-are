@@ -12,7 +12,9 @@ class ParentsController < ApplicationController
 
   def destroy
     comment = Comment.find(params[:id])
-    comment.destroy
+    if comment.destroy
+      redirect_to parents_path
+    end
   end
 
   def configure_permitted_parameters

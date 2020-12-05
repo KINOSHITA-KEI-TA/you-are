@@ -57,8 +57,15 @@ $(function() {
     window.alert('実装中');
     });
 })
+// $(function(){
+//   $('#js-table-comment').prepend("<%= j(render 'comment',{ comment: @comment }) %>");
+//   $('#comment_body').val('')
+//   $('#comment-<%= @comment.id %>').remove();
+// })
+
 $(function(){
-  $('#js-table-comment').prepend("<%= j(render 'comment',{ comment: @comment }) %>");
-  $('#comment_body').val('')
-  $('#comment-<%= @comment.id %>').remove();
-})
+  $('.default__gray').on('submit', function(e){
+  e.preventDefault()
+  $('.Main__comment-box').val('')
+  });
+});
