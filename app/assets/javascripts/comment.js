@@ -57,3 +57,8 @@ $(function() {
     window.alert('実装中');
     });
 })
+$(function(){
+  $('#js-table-comment').prepend("<%= j(render 'comment',{ comment: @comment }) %>");
+  $('#comment_body').val('')
+  $('#comment-<%= @comment.id %>').remove();
+})
