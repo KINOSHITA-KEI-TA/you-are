@@ -1,0 +1,22 @@
+.AccountPage{
+  &__title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  &__form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  .FormField{
+    margin-top: 10px;
+    &__input--normal{
+      width: 20px;
+      height: 30px;
+    }
+  }
+  .actions{
+    margin-top: 15px;
+  }
+}
