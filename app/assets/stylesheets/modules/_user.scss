@@ -12,8 +12,36 @@
   .FormField{
     margin-top: 10px;
     &__input--normal{
-      width: 20px;
-      height: 30px;
+      #user_name{
+        height: 4vh;
+        width: 20vw;
+        margin: 10px 0px 10px 0px;
+        padding-left: 10px;
+      }
+      #user_school_name{
+        height: 4vh;
+        width: 20vw;
+        margin: 10px 0px 10px 0px;
+        padding-left: 10px;
+      }
+      #user_email{
+        height: 4vh;
+        width: 20vw;
+        margin: 10px 0px 10px 0px;
+        padding-left: 10px;
+      }
+      #user_password{
+        height: 4vh;
+        width: 20vw;
+        margin: 10px 0px 10px 0px;
+        padding-left: 10px;
+      }
+      #user_password_confirmation{
+        height: 4vh;
+        width: 20vw;
+        margin: 10px 0px 10px 0px;
+        padding-left: 10px;
+      }
     }
   }
   .actions{
