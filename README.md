@@ -57,7 +57,7 @@ Copyright YOU ARE 2020.
 |------|----|-------|
 |name|string|
 |age|string|
-|tittle|string|
+|tittle|string|null: false|
 |text|string|
 ### Association
 - has_many :messages
@@ -80,8 +80,8 @@ Copyright YOU ARE 2020.
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|
-|school_name|string|
+|name|string|null: false|
+|school_name|string|null: false|
 |age|string|
 |text|string|
 ### Association
