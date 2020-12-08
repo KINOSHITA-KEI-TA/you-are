@@ -63,9 +63,10 @@ $(function() {
 //   $('#comment-<%= @comment.id %>').remove();
 // })
 
-$(function(){
-  $('.default__gray').on('submit', function(e){
-  e.preventDefault()
-  $('.Main__comment-box').val('')
-  });
-});
+// $(function(){
+//   $('.default__gray').on('submit', function(e){
+//   e.preventDefault()
+//   $('.Main__comment-box').val('')
+//   });
+//   // $('#comment-<%= @comment.id %>').remove();
+// });

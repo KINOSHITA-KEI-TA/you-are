@@ -13,7 +13,7 @@ class ParentsController < ApplicationController
   def destroy
     comment = Comment.find(params[:id])
     if comment.destroy
-      redirect_to parents_path
+      redirect_to parents_path(@comment)
     end
   end
 
