@@ -13,10 +13,10 @@
 ActiveRecord::Schema.define(version: 2020_11_30_140158) do
 
   create_table "comments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "name", limit: 255
-    t.string "age", limit: 255
-    t.string "tittle", limit: 255
-    t.string "text", limit: 255
+    t.string "name"
+    t.string "age"
+    t.string "tittle", null: false
+    t.string "text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -24,26 +24,25 @@ ActiveRecord::Schema.define(version: 2020_11_30_140158) do
   create_table "likes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.bigint "message_id", null: false
     t.integer "comment_id"
-    t.string "ip", limit: 255
+    t.string "ip"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["message_id"], name: "index_likes_on_message_id"
   end
 
   create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.integer "comment_id"
-    t.string "name", limit: 255
-    t.string "age", limit: 255
-    t.string "text", limit: 255
+    t.string "name"
+    t.string "age"
+    t.string "text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "secrets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
-    t.string "name", limit: 255
-    t.string "school_name", limit: 255
-    t.string "age", limit: 255
-    t.string "text", limit: 255
+    t.string "name", null: false
+    t.string "school_name", null: false
+    t.string "age"
+    t.string "text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
