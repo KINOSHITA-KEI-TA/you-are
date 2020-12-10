@@ -8,7 +8,12 @@ class CommentsController < ApplicationController
   end
 
   def create
-    Comment.create(comment_params)
+     if Comment.create(comment_params)
+      redirect_to comments_path
+     else 
+      flash.now[:alert] = 'メッセージを入力してください。'
+      render :new
+     end
   end
 
   def show
