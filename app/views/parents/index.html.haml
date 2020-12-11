@@ -1,6 +1,8 @@
 %body
 
 -# = render "head"
+.parent-body
+  削除専用画面
 = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
 .Search-Form
   = form_with(url: search_comments_path, local: true, method: :get, class: "search-form") do |form|
