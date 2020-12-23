@@ -29,8 +29,9 @@
                   = message.age
               .Message__message-box__message-answer__answer-text
                 = message.text
-              = button_to 'ありがとう', comment_message_likes_path(@comment,message)
-              = message.likes.count
+              - unless user_signed_in?
+                = button_to 'ありがとう', comment_message_likes_path(@comment,message)
+                = message.likes.count
    
   .Side
     .Side__side-box
@@ -39,7 +40,10 @@
         .Side__side-box__side-content
           .Side__side-box__side-content__side-tag
             = form.text_field :name, class:'Side__side-box__side-content__side-tag__side-name', placeholder: "ニックネーム"
-            = form.select :age, {'7さい': "7さい", '8さい': "8さい", '9さい': "9さい", '10歳': "10歳", '11歳': "11歳", '12歳': "12歳", '13歳': "13歳", '14歳': "14歳", '15歳': "15歳", '16歳': "16歳", 'ヒミツ': "ヒミツ", '大人': "大人"}, { include_blank: 'ねんれい'}, { class: 'side-control' , required: true }
+            - unless user_signed_in?
+              = form.select :age, {'7さい': "7さい", '8さい': "8さい", '9さい': "9さい", '10歳': "10歳", '11歳': "11歳", '12歳': "12歳", '13歳': "13歳", '14歳': "14歳", '15歳': "15歳", '16歳': "16歳", 'ヒミツ': "ヒミツ", '大人': "大人"}, { include_blank: 'ねんれい'}, { class: 'side-control' , required: true }
+            - else 
+              = form.select :age, {'大人': "大人"}, { include_blank: 'ねんれい'}, { class: 'side-control' , required: true }
           = form.text_area :text, class:'Side__side-box__side-content__side-text', placeholder: "コメント", rows: "100"
           = form.submit "送る",class:'Side__side-box__side-content__side-send'
 .Footer
