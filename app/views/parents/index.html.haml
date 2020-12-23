@@ -4,6 +4,8 @@
 .parent-body
   削除専用画面
 = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
+= link_to "/comments",class:"Button" do
+  はじめにもどる
 .Search-Form
   = form_with(url: search_comments_path, local: true, method: :get, class: "search-form") do |form|
     = form.text_field :keyword, placeholder: "質問検索", class: "search-input"
